@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2e144e, #1b1b3a); /* Gradient background */
+    color: #ffffff; /* White text */
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #8549a1; /* Purple border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #141a3a; /* Dark blue background for navigation */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background: #8549a1; /* Purple highlight */
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #8549a1; /* Purple border */
+}
+
+footer p {
+    font-size: 16px;
+    color: #cccccc; /* Light gray */
+    margin: 0;
+}
+
+/* Home Page Styles */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    color: #ffffff;
+}
+
+.home .info {
+    max-width: 50%;
+}
+
+.home h2 {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff79c6, #bd93f9); /* Pink-to-purple gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    margin: 0;
+    line-height: 1.2;
+}
+
+.home p {
+    font-size: 16px;
+    color: #d1c4e9; /* Light lavender */
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.home .buttons {
+    margin-top: 30px;
+}
+
+.button {
+    background-color: #8549a1; /* Purple button */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a564d5; /* Brighter purple */
+    transform: scale(1.05);
+}
+
+.home .image img {
+    max-width: 400px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Soft white glow */
+}
+
+/* Section Styles */
+.resume, .biodata {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black for sections */
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+    color: #ffffff;
+}
+
+.resume h2, .biodata h2 {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff79c6, #bd93f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient headings */
+    text-align: center;
+}
+
+.resume p, .biodata p {
+    font-size: 16px;
+    color: #d1c4e9; /* Light lavender for text */
+    line-height: 1.6;
+}
+
+.resume p strong, .biodata p strong {
+    color: #ffffff; /* Bright white for emphasis */
+}
